@@ -1,0 +1,199 @@
+/* font family */
+@import url("https://fonts.googleapis.com/css2?family=Corinthia:wght@700&family=Great+Vibes&family=Lato:wght@300&family=Lobster&family=McLaren&family=Montserrat:wght@600&family=Pacifico&family=Poppins:wght@400;500&family=Roboto:wght@300;400&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 62.5%;
+}
+body {
+  background-color: aqua;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 5vw;
+  height: 10vh;
+  background-color: black;
+  border-bottom: 2px solid orange;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.brandName {
+  color: white;
+  font-family: "Poppins", sans-serif;
+}
+
+.menu > li {
+  font-size: 3rem;
+  list-style: none;
+}
+.menu > li > a {
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  color: white;
+
+  cursor: pointer;
+}
+
+.menu > li > a:hover {
+  color: orange;
+}
+
+.music {
+  font-size: 2.7rem;
+  color: orange;
+}
+
+/* middle body style  */
+
+.middle {
+  background: black;
+  height: 60vh;
+  width: 60vw;
+  margin: 10px auto;
+  padding: 20px;
+  border-radius: 10px;
+  background-image: url(./img/g1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.middle > h1 {
+  font-size: 2rem;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 1px;
+}
+
+/* bottom style */
+
+.bottom {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 20vh;
+  position: sticky;
+  background-color: rgb(33, 33, 33);
+}
+
+#progressBar {
+  cursor: pointer;
+}
+
+.bottom > input {
+  width: 80%;
+  position: relative;
+  bottom: 10px;
+}
+
+.icon > i {
+  color: white;
+  cursor: pointer;
+  font-size: 2.4rem;
+  padding: 5px;
+}
+
+
+
+
+/* song item style  */
+
+
+.songItem{
+    margin-top: 20px;
+}
+
+
+
+.musicContant{
+    
+    background-color: white;
+    width: 40%;
+    margin: 10px 0;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+    font-size: 2rem;
+
+}
+
+.musicContant>img{
+    border-radius: 100%;
+}
+
+.timeStamp>span>i{
+    font-size: 1.3rem;
+    padding: 0 5px;
+    cursor: pointer;
+}
+
+
+.musicContant>img{
+    width: 40px;
+    height: 40px;
+    padding: 0 5px;
+}
+
+
+.songName{
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.gif{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left: 0;
+    margin-left: 10vw;
+    margin-top: 30px;
+    opacity: 0;
+    transition: opacity 0.8s ease-in;
+    
+}
+
+#tittle{
+    font-size: 1rem;
+    margin-top: 15px;
+    color: white;
+    letter-spacing: 1px;
+    font-family: 'Poppins', sans-serif;
+    
+    
+}
+
+
+/* responsive design */
+
+@media screen and (max-width:987px) {
+
+    .musicContant{
+        width: 80%;
+    }
+    .gif{
+      margin-top: 60px;
+    }
+    
+}
+@media screen and (max-width:618px) {
+
+    .musicContant{
+        font-size: 2rem;
+        width: 100%;
+    }
+
+    .gif{
+      margin-top: 60px;
+    }
+    
+}
